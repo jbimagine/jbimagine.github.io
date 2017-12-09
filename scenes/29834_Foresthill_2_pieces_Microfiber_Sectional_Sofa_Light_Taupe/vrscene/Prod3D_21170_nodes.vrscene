@@ -1,0 +1,234 @@
+Node Prod3D_21170_Shape006@node_1085 {
+  transform=Transform(Matrix(Vector(1, -1.748456e-007, 0), Vector(1.748456e-007, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_2678709007;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Shape004@node_1082 {
+  transform=Transform(Matrix(Vector(1, -1.748456e-007, 0), Vector(1.748456e-007, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_595792983;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_seam_01@node_1036 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_2918825368;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Pillow_01@node_1030 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_3645070804;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Pillow_05@node_1045 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, -1.748456e-007), Vector(0, 1.748456e-007, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_876751218;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_seam_05@node_1044 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_3414730812;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Pillow_04@node_1043 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_1595598245;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_seam_06@node_1046 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, -1.748456e-007), Vector(0, 1.748456e-007, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_3849800807;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Pillow_03@node_1041 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_1742402518;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_base_01@node_75 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_3677242565;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_seamm@node_1063 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_3350223879;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_subtool3@node_1079 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_208279646;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_seam_03@node_1040 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_2859966823;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Shape002@node_1080 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_4222511939;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_subtool1@node_1077 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_2764912838;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Shape005@node_1083 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_3843771741;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_seam_04@node_1042 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_2511538003;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_base_003@node_1058 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_602086385;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Shape003@node_1081 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_3079073598;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_seam_07@node_1054 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_1287412505;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_legs@node_131 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_2256832904;
+  material=Prod3D_21170_MDY4_WOOD_FLOOR19_Satin@mtl_2;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Pillow_02@node_1039 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_2436996908;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_subtool004@node_1084 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_891069233;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_Shape001@node_1060 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_1183096880;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_back@node_1088 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_113526012;
+  material=Prod3D_21170_textile_dark_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_21170_seaaam001@node_1087 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_21170_Mesh_396691599;
+  material=Prod3D_21170_textile_light_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+

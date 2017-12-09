@@ -1,25 +1,13 @@
-var canvas,
-  engine,
-  createScene,
-  scene,
-  light,
-  camera,
-  sphere,
-  box,
-  r,
-  g,
-  b,
-  inputElement,
-  fileList,
-  reader;
+/*jshint esversion: 6 */
 
+var canvas, engine, createScene, scene, light, camera, sphere, box, r, g, b;
 r = 184 / 255;
 g = 184 / 255;
 b = 184 / 255;
-
 canvas = document.getElementById("renderCanvas");
-
-engine = new BABYLON.Engine(canvas, true);
+engine = new BABYLON.Engine(canvas, true, {
+  stencil: true
+});
 
 createScene = function() {
   scene = new BABYLON.Scene(engine);
@@ -55,53 +43,163 @@ createScene = function() {
   );
   light.intensity = 0.7;
 
-  inputElement = document.getElementById("fileUpload");
+  //import a test object
+  var meshVar = BABYLON.SceneLoader.ImportMesh(
+    "",
+    "scenes/31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite/test/",
+    "ElliotMicrofiber2PieceSectionalSofa.babylon",
+    scene,
+    function(newMeshes) {
+      //create the default textures
+      var graphite1 = new BABYLON.StandardMaterial("Graphite Fabric 1", scene);
+      graphite1.diffuseTexture = new BABYLON.Texture(
+        "scenes/31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite/test/fabric.dif.jpg",
+        scene
+      );
 
-  inputElement.addEventListener(
-    "change",
-    function handleFiles(event) {
-      fileList = this.files[0];
-      reader = new FileReader();
+      var darkBrownWood1 = new BABYLON.StandardMaterial(
+        "Dark Brown Wood 1",
+        scene
+      );
+      darkBrownWood1.diffuseTexture = new BABYLON.Texture(
+        "scenes/31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite/test/wood.dif.jpg",
+        scene
+      );
 
-      reader.addEventListener("loadend", function() {
-        var data = reader.result;
-        // The first parameter can be used to specify which mesh to import. Here we import all meshes
-        var importedScene = BABYLON.SceneLoader.ImportMesh(
-          "",
-          "",
-          "data:" + data,
-          scene,
-          function(newMeshes) {
-            //newMeshes[0].scaling.x = .1;
-            //Mesh comes in to large.  Use this to scale the mesh down
-            newMeshes[0].scaling = new BABYLON.Vector3(0.1, 0.1, 0.1);
-            newMeshes[0].position.y = 0;
-            //newMeshes[0].positiion = new BABYLON.Vector3(0,0,0);
-            camera.setTarget = newMeshes[2];
-          }
-        );
+      //create the materials
+      const beigeFabricDif = new BABYLON.StandardMaterial(
+        "Beige Fabric",
+        scene
+      );
+      beigeFabricDif.diffuseTexture = new BABYLON.Texture(
+        "scenes/textures/beigeFabric.dif.jpg",
+        scene
+      );
+
+      beigeFabricDif.diffuseTexture.uScale = 10;
+      beigeFabricDif.diffuseTexture.vScale = 10;
+
+      const navyFabricDif = new BABYLON.StandardMaterial("Navy Fabric", scene);
+      navyFabricDif.diffuseTexture = new BABYLON.Texture(
+        "scenes/textures/navyFabric.dif.jpg",
+        scene
+      );
+
+      navyFabricDif.diffuseTexture.uScale = 10;
+      navyFabricDif.diffuseTexture.vScale = 10;
+
+      const forestGreenFabricDif = new BABYLON.StandardMaterial(
+        "Forest Green Fabric",
+        scene
+      );
+      forestGreenFabricDif.diffuseTexture = new BABYLON.Texture(
+        "scenes/textures/forestGreenFabric.dif.jpg",
+        scene
+      );
+      forestGreenFabricDif.diffuseTexture.uScale = 10;
+      forestGreenFabricDif.diffuseTexture.vScale = 10;
+
+      const greyFabricDif = new BABYLON.StandardMaterial("Grey Fabric", scene);
+      greyFabricDif.diffuseTexture = new BABYLON.Texture(
+        "scenes/textures/greyFabric.dif.jpg",
+        scene
+      );
+      greyFabricDif.diffuseTexture.uScale = 10;
+      greyFabricDif.diffuseTexture.vScale = 10;
+
+      const redFabricDif = new BABYLON.StandardMaterial("Red Fabric", scene);
+      redFabricDif.diffuseTexture = new BABYLON.Texture(
+        "scenes/textures/redFabric.dif.jpg",
+        scene
+      );
+
+      var pbr = new BABYLON.PBRMetallicRoughnessMaterial("pbr", scene);
+
+      pbr.baseTexture = new BABYLON.Texture(
+        "scenes/textures/beigeFabric.dif.jpg",
+        scene
+      );
+      pbr.metallic = 0;
+      pbr.roughness = 0.65;
+      pbr.baseTexture.uScale = 10;
+      pbr.baseTexture.vScale = 10;
+
+      //set the uv scale of the fabric currently have to set each one by one.
+      redFabricDif.diffuseTexture.uScale = 10;
+      redFabricDif.diffuseTexture.vScale = 10;
+
+      newMeshes[1].material = graphite1;
+      newMeshes[2].material = pbr;
+
+      //newMeshes[0].scaling.x = .1;
+      newMeshes[0].scaling = new BABYLON.Vector3(0.1, 0.1, 0.1);
+      newMeshes[0].position.y = 0;
+
+      //newMeshes[0].positiion = new BABYLON.Vector3(0,0,0);
+      camera.setTarget = newMeshes[0];
+
+      //CREATE AN OBJECT THAT WILL HOLD ALL OF THE FABRICS.
+      const obj = {
+        redId: redFabricDif,
+        beigeId: beigeFabricDif,
+        forestGreenId: forestGreenFabricDif,
+        greyId: greyFabricDif,
+        navyId: navyFabricDif
+      };
+
+      //When click event is raised
+      let currentFabric;
+      let fabrics = document.querySelectorAll(".fabrics");
+      fabrics.forEach(function(fabric) {
+        fabric.addEventListener("click", evt => {
+          console.log(obj[evt.target.id]);
+          currentFabric = obj[evt.target.id];
+        });
       });
-      reader.readAsText(fileList);
-    },
-    false
+
+      window.addEventListener("click", () => {
+        const pickResult = scene.pick(scene.pointerX, scene.pointerY);
+        const selectedMesh = pickResult.pickedMesh;
+        console.log(selectedMesh);
+        console.log(currentFabric, "currentMesh");
+
+        if (selectedMesh && currentFabric) {
+          selectedMesh.material = currentFabric;
+        }
+      });
+
+      //UPON SELECTING AN OBJECT, ALLOWS YOU TO HAVE A VISUAL HIGHLIGHT DENOTING WHETHER THE MESH IS SELECTED/DESELECTED
+      var h1 = new BABYLON.HighlightLayer("hl", scene);
+
+      var lastClickedMesh = null;
+
+      scene.onPointerObservable.add(evt => {
+        if (evt.pickInfo.hit && evt.pickInfo.pickedMesh !== undefined) {
+          let mesh = evt.pickInfo.pickedMesh;
+          if (newMeshes) {
+            if (lastClickedMesh !== null) {
+              //console.log('unhighlighting', lastClickedMesh)
+              h1.removeMesh(lastClickedMesh);
+            }
+            lastClickedMesh = mesh;
+            h1.addMesh(
+              lastClickedMesh,
+              BABYLON.Color3.FromHexString("#4c90ef")
+            );
+          }
+        } else {
+          h1.removeMesh(lastClickedMesh);
+        }
+      }, BABYLON.PointerEventTypes.POINTERDOWN);
+    }
   );
 
   //This is the debug layer.  Disable it upon completion.
-  scene.debugLayer.show();
-  BABYLON.DebugLayer.InspectorURL = "http://myurl/babylon.inspector.bundle.js";
+  /* scene.debugLayer.show();
+  BABYLON.DebugLayer.InspectorURL = 'http://myurl/babylon.inspector.bundle.js'; */
 
   return scene;
 };
-
-/* function resetScene(){
-  for(var index = scene.meshes.length -1;index >=0; index--){
-      var m = this.scene.meshes[0];
-      if(!m)
-      continue;
-      m.dispose();
-  }
-  return resetScene;
-} */
 
 var scene = createScene();
 

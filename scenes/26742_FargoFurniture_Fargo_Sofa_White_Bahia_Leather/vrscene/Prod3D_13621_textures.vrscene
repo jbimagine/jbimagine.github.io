@@ -1,0 +1,86 @@
+TexBitmap Prod3D_13621_Leather_dif@tex_0 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_13621_Leather_dif@tex_0_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_13621_bitmapBuffer_0_gsRGB;
+}
+
+UVWGenChannel Prod3D_13621_Leather_dif@tex_0_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(40, 0, 0), Vector(0, 40, 0), Vector(0, 0, 1)), Vector(-19.5, -19.5, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_13621_leather@mtl_brdf_0_diffuse_combine {
+  color=Color(0.5, 0.5, 0.5);
+  texture=Prod3D_13621_Leather_dif@tex_0;
+  texture_multiplier=1;
+}
+
+TexBitmap Prod3D_13621_leather_bum@tex_1 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_13621_leather_bum@tex_1_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_13621_bitmapBuffer_1_gsRGB;
+}
+
+UVWGenChannel Prod3D_13621_leather_bum@tex_1_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1;
+  uvw_channel=1;
+}
+
+TexBitmap Prod3D_13621_Leather_spc@tex_0 {
+  alpha_from_intensity=0;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_13621_Leather_spc@tex_0_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_13621_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_13621_Leather_spc@tex_0_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(40, 0, 0), Vector(0, 40, 0), Vector(0, 0, 1)), Vector(-19.5, -19.5, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1;
+  uvw_channel=1;
+}
+
+TexFloatToColor Prod3D_13621_Leather_spc@tex_0_mono {
+  input=Prod3D_13621_Leather_spc@tex_0::out_intensity;
+}
+
+TexCombineFloat Prod3D_13621_leather@mtl_brdf_0_refl_gloss_combine {
+  value=0.7199999;
+  texture=Prod3D_13621_Leather_spc@tex_0_mono;
+  texture_multiplier=0.3;
+  texture_clamp=1;
+}
+

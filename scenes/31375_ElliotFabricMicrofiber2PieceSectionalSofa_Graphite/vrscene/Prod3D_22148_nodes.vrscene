@@ -1,0 +1,20 @@
+Node Prod3D_22148_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite_Legs@node_48 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_22148_Mesh_2448668335;
+  material=Prod3D_22148_Wood_VMT@mtl_0;
+  nsamples=1;
+  visible=1;
+  user_attributes="MapChannel:1=map1;";
+  primary_visibility=1;
+}
+
+Node Prod3D_22148_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite_Base@node_47 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_22148_Mesh_629023329;
+  material=Prod3D_22148_Fabric_VMT@mtl_1;
+  nsamples=1;
+  visible=1;
+  user_attributes="MapChannel:1=map1;";
+  primary_visibility=1;
+}
+

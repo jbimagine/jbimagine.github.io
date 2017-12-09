@@ -1,0 +1,84 @@
+BitmapBuffer Prod3D_20295_bitmapBuffer_0_gsRGB {
+  filter_type=1;
+  filter_blur=1.2;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="Shade_Linen_brown_.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_20295_bitmapBuffer_1_gsRGB {
+  filter_type=1;
+  filter_blur=1.25;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="Shade_.bum.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_20295_bitmapBuffer_2_gsRGB {
+  filter_type=1;
+  filter_blur=1.25;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="shade_.ref.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_20295_bitmapBuffer_3_gsRGB {
+  filter_type=1;
+  filter_blur=1.2;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="Shade_Linen_Whitr_.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_20295_bitmapBuffer_4_gsRGB {
+  filter_type=1;
+  filter_blur=1;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="dark_wood_.dif.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_20295_bitmapBuffer_5_gsRGB {
+  filter_type=1;
+  filter_blur=1;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="dark_wood_.bum.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+

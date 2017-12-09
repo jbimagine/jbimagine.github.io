@@ -1,0 +1,42 @@
+BitmapBuffer Prod3D_13621_bitmapBuffer_0_gsRGB {
+  filter_type=1;
+  filter_blur=1;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="Leather.dif.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_13621_bitmapBuffer_1_gsRGB {
+  filter_type=1;
+  filter_blur=1;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="Leather.bum.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_13621_bitmapBuffer_2_gsRGB {
+  filter_type=1;
+  filter_blur=1;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="Leather.spc.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+

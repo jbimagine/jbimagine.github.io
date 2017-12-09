@@ -1,0 +1,70 @@
+BitmapBuffer Prod3D_22148_bitmapBuffer_0_gsRGB {
+  filter_type=1;
+  filter_blur=0.01;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="wood.dif.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_22148_bitmapBuffer_1_gsRGB {
+  filter_type=1;
+  filter_blur=0.01;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="wood.ref.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_22148_bitmapBuffer_2_gsRGB {
+  filter_type=1;
+  filter_blur=0.01;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="fabric.dif.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_22148_bitmapBuffer_3_gsRGB {
+  filter_type=1;
+  filter_blur=0.01;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="fabric.bum.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+
+BitmapBuffer Prod3D_22148_bitmapBuffer_4_gsRGB {
+  filter_type=1;
+  filter_blur=0.01;
+  color_space=1;
+  gamma=0.4545454;
+  maya_compatible=0;
+  interpolation=3;
+  file="fabric.spc.tif";
+  load_file=1;
+  ifl_start_frame=0;
+  ifl_playback_rate=1;
+  ifl_end_condition=0;
+}
+

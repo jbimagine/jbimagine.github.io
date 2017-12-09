@@ -4,12 +4,13 @@
 
 <head>
     <title>ElsiePropViewer</title>
-    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="index.css">
     <script src="scripts/sideNav.js"></script>
     <script src="https://www.babylonjs.com/hand.minified-1.2.js"></script>
     <script src="https://preview.babylonjs.com/cannon.js"></script>
     <script src="https://preview.babylonjs.com/oimo.js"></script>
     <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src="https://preview.babylonjs.com/gui/babylon.gui.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
@@ -48,14 +49,26 @@
             <a href="#">Prop Settings</a>
         </div>
         <!--<a href="javascript: void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
-        <a href="#">Fabrics:</a>
-        <ul>
+        <a href="#">Fabrics</a>
+        <ul class="fabrics">
+            <li class="beigeFabric">
+                <img src="imgs/thumbnails/beigeFabric.dif.thumb.jpg" id="beigeId" />
+            </li>
             <li class="redFabric">
-                <img src="imgs/modsyLogoSolo001.png" id="logo" />
+                <img src="imgs/thumbnails/redFabric.dif.thumb.jpg" id="redId" />
+            </li>
+            <li class="forestGreenFabric">
+                <img src="imgs/thumbnails/forestGreenFabric.dif.thumb.jpg" id="forestGreenId" />
+            </li>
+            <li class="greyFabric">
+                <img src="imgs/thumbnails/greyFabric.dif.thumb.jpg" id="greyId" />
+            </li>
+            <li class="navyFabric">
+                <img src="imgs/thumbnails/navyFabric.dif.thumb.jpg" id="navyId" />
             </li>
         </ul>
-        <a href="#">Leather:</a>
-        <a href="#">Wood:</a>
+        <a href="#">Leather</a>
+        <a href="#">Wood</a>
     </div>
 
 

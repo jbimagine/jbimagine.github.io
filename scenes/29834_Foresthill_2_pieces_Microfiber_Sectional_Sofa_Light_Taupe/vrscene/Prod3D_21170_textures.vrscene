@@ -1,0 +1,348 @@
+TexBitmap Prod3D_21170_textile_dark_DIF@tex_0 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_textile_dark_DIF@tex_0_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_0_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_textile_dark_DIF@tex_0_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.2;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_21170_textile_dark_VMT@mtl_brdf_0_diffuse_combine {
+  color=Color(0.9725491, 0.9843138, 0.9882354);
+  texture=Prod3D_21170_textile_dark_DIF@tex_0;
+  texture_multiplier=1;
+}
+
+TexBitmap Prod3D_21170_textile_dark_BUM@tex_1 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_textile_dark_BUM@tex_1_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_1_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_textile_dark_BUM@tex_1_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexBitmap Prod3D_21170_textile_dark_REF@tex_2 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_textile_dark_REF@tex_2_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_textile_dark_REF@tex_2_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_21170_textile_dark_VMT@mtl_brdf_0_reflect_combine {
+  color=Color(0.01960784, 0.01960784, 0.01960784);
+  texture=Prod3D_21170_textile_dark_REF@tex_2;
+  texture_multiplier=0.05;
+}
+
+TexBitmap Prod3D_21170_textile_dark_REF@tex_0 {
+  alpha_from_intensity=0;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_textile_dark_REF@tex_0_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_textile_dark_REF@tex_0_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexFloatToColor Prod3D_21170_textile_dark_REF@tex_0_mono {
+  input=Prod3D_21170_textile_dark_REF@tex_0::out_intensity;
+}
+
+TexCombineFloat Prod3D_21170_textile_dark_VMT@mtl_brdf_0_hilight_gloss_combine {
+  value=0.5;
+  texture=Prod3D_21170_textile_dark_REF@tex_0_mono;
+  texture_multiplier=0.05;
+  texture_clamp=1;
+}
+
+TexBezierCurve Prod3D_21170_falloffDif@tex_3_mix_curve {
+  input_float=Prod3D_21170_falloffDif@tex_3_subFalloff::blend_output;
+  points=ListFloatHex("ZIPC3000000011000000eJxjYMAFGuwhGBUAAB2KAX8=");
+  types=ListIntHex("ZIPC080000000B000000eJxjYIAAAAAIAAE=");
+}
+
+TexFalloff Prod3D_21170_falloffDif@tex_3 {
+  color1=Prod3D_21170_falloffDif@tex_3_map1_combined;
+  color2=Prod3D_21170_falloffDif@tex_3_map2_combined;
+  type=2;
+  direction_type=0;
+  fresnel_ior=1.6;
+  dist_extrapolate=0;
+  dist_near=0;
+  dist_far=100;
+  use_blend_input=1;
+  blend_input=Prod3D_21170_falloffDif@tex_3_mix_curve;
+}
+
+TexCombineColor Prod3D_21170_falloffDif@tex_3_map1_combined {
+  color=Color(0, 0, 0);
+  texture=Prod3D_21170_textile_light_DIF@tex_4;
+  texture_multiplier=1;
+}
+
+TexBitmap Prod3D_21170_textile_light_DIF@tex_4 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_textile_light_DIF@tex_4_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_3_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_textile_light_DIF@tex_4_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.2;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_21170_falloffDif@tex_3_map2_combined {
+  color=Color(1, 1, 1);
+  texture=Prod3D_21170_Map_2@tex_5;
+  texture_multiplier=1;
+}
+
+TexBitmap Prod3D_21170_Map_2@tex_5 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_Map_2@tex_5_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_4_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_Map_2@tex_5_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.2;
+  uvw_channel=1;
+}
+
+TexFalloff Prod3D_21170_falloffDif@tex_3_subFalloff {
+  color1=Prod3D_21170_falloffDif@tex_3_subFalloff_map1_combined;
+  color2=Prod3D_21170_falloffDif@tex_3_subFalloff_map2_combined;
+  type=2;
+  direction_type=0;
+  fresnel_ior=1.6;
+  dist_extrapolate=0;
+  dist_near=0;
+  dist_far=100;
+  use_blend_input=0;
+}
+
+TexCombineColor Prod3D_21170_falloffDif@tex_3_subFalloff_map1_combined {
+  color=Color(0, 0, 0);
+  texture=Prod3D_21170_textile_light_DIF@tex_4;
+  texture_multiplier=1;
+}
+
+TexCombineColor Prod3D_21170_falloffDif@tex_3_subFalloff_map2_combined {
+  color=Color(1, 1, 1);
+  texture=Prod3D_21170_Map_2@tex_5;
+  texture_multiplier=1;
+}
+
+TexCombineColor Prod3D_21170_textile_light_VMT@mtl_brdf_1_diffuse_combine {
+  color=Color(0.9725491, 0.9843138, 0.9882354);
+  texture=Prod3D_21170_falloffDif@tex_3;
+  texture_multiplier=1;
+}
+
+TexBitmap Prod3D_21170_textile_light_BUM@tex_6 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_textile_light_BUM@tex_6_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_1_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_textile_light_BUM@tex_6_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexBitmap Prod3D_21170_textile_light_REF@tex_7 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_textile_light_REF@tex_7_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_textile_light_REF@tex_7_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_21170_textile_light_VMT@mtl_brdf_1_reflect_combine {
+  color=Color(0.01960784, 0.01960784, 0.01960784);
+  texture=Prod3D_21170_textile_light_REF@tex_7;
+  texture_multiplier=0.05;
+}
+
+TexBitmap Prod3D_21170_textile_light_REF@tex_1 {
+  alpha_from_intensity=0;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_textile_light_REF@tex_1_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_textile_light_REF@tex_1_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexFloatToColor Prod3D_21170_textile_light_REF@tex_1_mono {
+  input=Prod3D_21170_textile_light_REF@tex_1::out_intensity;
+}
+
+TexCombineFloat Prod3D_21170_textile_light_VMT@mtl_brdf_1_hilight_gloss_combine {
+  value=0.5;
+  texture=Prod3D_21170_textile_light_REF@tex_1_mono;
+  texture_multiplier=0.05;
+  texture_clamp=1;
+}
+
+TexBitmap Prod3D_21170_MDY4_WOOD_FLOOR19_Satin_d@tex_8 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_21170_MDY4_WOOD_FLOOR19_Satin_d@tex_8_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_5_gsRGB;
+}
+
+UVWGenChannel Prod3D_21170_MDY4_WOOD_FLOOR19_Satin_d@tex_8_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_21170_MDY4_WOOD_FLOOR19_Satin@mtl_brdf_2_diffuse_combine {
+  color=Color(0.5, 0.5, 0.5);
+  texture=Prod3D_21170_MDY4_WOOD_FLOOR19_Satin_d@tex_8;
+  texture_multiplier=1;
+}
+
+TexBitmap Prod3D_21170_MDY4_WOOD_FLOOR19_Satin_b@tex_9 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_21170_bitmapBuffer_6_gsRGB;
+}
+

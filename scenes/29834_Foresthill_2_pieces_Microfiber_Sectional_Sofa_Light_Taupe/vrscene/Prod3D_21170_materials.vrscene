@@ -1,0 +1,216 @@
+MtlSingleBRDF Prod3D_21170_textile_dark_VMT@mtl_0 {
+  brdf=Prod3D_21170_textile_dark_VMT@mtl_brdf_0_bump;
+  double_sided=0;
+}
+
+BRDFVRayMtl Prod3D_21170_textile_dark_VMT@mtl_brdf_0 {
+  opacity=1;
+  diffuse=Prod3D_21170_textile_dark_VMT@mtl_brdf_0_diffuse_combine;
+  roughness=0;
+  self_illumination=AColor(0, 0, 0, 1);
+  self_illumination_gi=1;
+  brdf_type=1;
+  reflect=Prod3D_21170_textile_dark_VMT@mtl_brdf_0_reflect_combine;
+  reflect_glossiness=0.65;
+  hilight_glossiness=Prod3D_21170_textile_dark_VMT@mtl_brdf_0_hilight_gloss_combine;
+  hilight_glossiness_lock=0;
+  fresnel=1;
+  fresnel_ior=2;
+  fresnel_ior_lock=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=1;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=2540;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=0;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=0;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=0;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=0;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=25400;
+  option_double_sided=0;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  use_environment_override=0;
+  environment_priority=0;
+}
+
+BRDFBump Prod3D_21170_textile_dark_VMT@mtl_brdf_0_bump {
+  base_brdf=Prod3D_21170_textile_dark_VMT@mtl_brdf_0;
+  bump_tex_mult=0.2;
+  bump_tex=Prod3D_21170_textile_dark_BUM@tex_1;
+  map_type=5;
+}
+
+MtlSingleBRDF Prod3D_21170_textile_light_VMT@mtl_1 {
+  brdf=Prod3D_21170_textile_light_VMT@mtl_brdf_1_bump;
+  double_sided=0;
+}
+
+BRDFVRayMtl Prod3D_21170_textile_light_VMT@mtl_brdf_1 {
+  opacity=1;
+  diffuse=Prod3D_21170_textile_light_VMT@mtl_brdf_1_diffuse_combine;
+  roughness=0;
+  self_illumination=AColor(0, 0, 0, 1);
+  self_illumination_gi=1;
+  brdf_type=1;
+  reflect=Prod3D_21170_textile_light_VMT@mtl_brdf_1_reflect_combine;
+  reflect_glossiness=0.65;
+  hilight_glossiness=Prod3D_21170_textile_light_VMT@mtl_brdf_1_hilight_gloss_combine;
+  hilight_glossiness_lock=0;
+  fresnel=1;
+  fresnel_ior=2;
+  fresnel_ior_lock=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=1;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=2540;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=0;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=0;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=0;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=0;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=25400;
+  option_double_sided=0;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  use_environment_override=0;
+  environment_priority=0;
+}
+
+BRDFBump Prod3D_21170_textile_light_VMT@mtl_brdf_1_bump {
+  base_brdf=Prod3D_21170_textile_light_VMT@mtl_brdf_1;
+  bump_tex_mult=0.2;
+  bump_tex=Prod3D_21170_textile_light_BUM@tex_6;
+  map_type=5;
+}
+
+MtlSingleBRDF Prod3D_21170_MDY4_WOOD_FLOOR19_Satin@mtl_2 {
+  brdf=Prod3D_21170_MDY4_WOOD_FLOOR19_Satin@mtl_brdf_2_bump;
+  double_sided=1;
+}
+
+BRDFVRayMtl Prod3D_21170_MDY4_WOOD_FLOOR19_Satin@mtl_brdf_2 {
+  opacity=1;
+  diffuse=Prod3D_21170_MDY4_WOOD_FLOOR19_Satin@mtl_brdf_2_diffuse_combine;
+  roughness=0;
+  self_illumination=AColor(0, 0, 0, 1);
+  self_illumination_gi=1;
+  brdf_type=1;
+  reflect=AColor(0.05882353, 0.05882353, 0.05882353, 1);
+  reflect_glossiness=0.85;
+  hilight_glossiness=0.75;
+  hilight_glossiness_lock=0;
+  fresnel=1;
+  fresnel_ior=3;
+  fresnel_ior_lock=0;
+  reflect_subdivs=8;
+  reflect_trace=1;
+  reflect_depth=5;
+  reflect_exit_color=Color(0, 0, 0);
+  hilight_soften=0;
+  reflect_dim_distance_on=0;
+  reflect_dim_distance=100;
+  reflect_dim_distance_falloff=0;
+  reflect_affect_alpha=0;
+  anisotropy=0;
+  anisotropy_rotation=0;
+  anisotropy_derivation=0;
+  anisotropy_axis=2;
+  refract=AColor(0, 0, 0, 1);
+  refract_ior=1.6;
+  refract_glossiness=1;
+  refract_subdivs=8;
+  refract_trace=1;
+  refract_depth=5;
+  refract_exit_color_on=0;
+  refract_exit_color=Color(0, 0, 0);
+  refract_affect_alpha=0;
+  refract_affect_shadows=0;
+  dispersion_on=0;
+  dispersion=50;
+  fog_color=Color(1, 1, 1);
+  fog_mult=1;
+  fog_bias=0;
+  fog_unit_scale_on=1;
+  translucency=0;
+  translucency_color=AColor(1, 1, 1, 1);
+  translucency_light_mult=1;
+  translucency_scatter_dir=1;
+  translucency_scatter_coeff=0;
+  translucency_thickness=1000;
+  option_double_sided=1;
+  option_reflect_on_back=0;
+  option_glossy_rays_as_gi=1;
+  option_cutoff=0.001;
+  option_use_irradiance_map=1;
+  option_energy_mode=0;
+  option_fix_dark_edges=1;
+  use_environment_override=0;
+  environment_priority=0;
+}
+
+BRDFBump Prod3D_21170_MDY4_WOOD_FLOOR19_Satin@mtl_brdf_2_bump {
+  base_brdf=Prod3D_21170_MDY4_WOOD_FLOOR19_Satin@mtl_brdf_2;
+  bump_tex_mult=0.05;
+  bump_tex=Prod3D_21170_MDY4_WOOD_FLOOR19_Satin_b@tex_9;
+  map_type=5;
+}
+

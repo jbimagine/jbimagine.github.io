@@ -1,0 +1,18 @@
+Node Prod3D_13621_FargosofaWhiteBahiaLeather_base@node_7 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_13621_Mesh_168515643;
+  material=Prod3D_13621_leather@mtl_0;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+
+Node Prod3D_13621_FargosofaWhiteBahiaLeather_legs@node_11 {
+  transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  geometry=Prod3D_13621_Mesh_383688176;
+  material=Prod3D_13621_metal@mtl_1;
+  nsamples=1;
+  visible=1;
+  primary_visibility=1;
+}
+

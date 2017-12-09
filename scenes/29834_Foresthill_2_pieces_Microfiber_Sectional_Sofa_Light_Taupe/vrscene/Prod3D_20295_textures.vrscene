@@ -1,0 +1,380 @@
+TexOutput Prod3D_20295_textile_dark_DIF_bitmap0_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_textile_dark_DIF_bitmap0;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_textile_dark_DIF_bitmap0 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_textile_dark_DIF_bitmap0_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_0_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_textile_dark_DIF_bitmap0_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.2;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_20295_textile_dark_VMT_material0_diffuse_combine {
+  color=Color(0.9725491, 0.9843138, 0.9882354);
+  texture=Prod3D_20295_textile_dark_DIF_bitmap0_output;
+  texture_multiplier=1;
+}
+
+TexOutput Prod3D_20295_textile_dark_BUM_bitmap1_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_textile_dark_BUM_bitmap1;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_textile_dark_BUM_bitmap1 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_textile_dark_BUM_bitmap1_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_1_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_textile_dark_BUM_bitmap1_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexOutput Prod3D_20295_textile_dark_REF_bitmap2_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_textile_dark_REF_bitmap2;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_textile_dark_REF_bitmap2 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_textile_dark_REF_bitmap2_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_textile_dark_REF_bitmap2_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_20295_textile_dark_VMT_material0_reflect_combine {
+  color=Color(0.01960784, 0.01960784, 0.01960784);
+  texture=Prod3D_20295_textile_dark_REF_bitmap2_output;
+  texture_multiplier=0.05;
+}
+
+TexOutput Prod3D_20295_textile_dark_REF_bitmap_mono0_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_textile_dark_REF_bitmap_mono0_output_mono;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_textile_dark_REF_bitmap_mono0 {
+  alpha_from_intensity=0;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_textile_dark_REF_bitmap_mono0_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_textile_dark_REF_bitmap_mono0_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexFloatToColor Prod3D_20295_textile_dark_REF_bitmap_mono0_output_mono {
+  input=Prod3D_20295_textile_dark_REF_bitmap_mono0::out_intensity;
+}
+
+TexCombineFloat Prod3D_20295_textile_dark_VMT_material0_hilight_gloss_combine {
+  value=0.5;
+  texture=Prod3D_20295_textile_dark_REF_bitmap_mono0_output;
+  texture_multiplier=0.05;
+  texture_clamp=1;
+}
+
+TexOutput Prod3D_20295_textile_light_DIF_bitmap3_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_textile_light_DIF_bitmap3;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_textile_light_DIF_bitmap3 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_textile_light_DIF_bitmap3_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_3_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_textile_light_DIF_bitmap3_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.2;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_20295_textile_light_VMT_material1_diffuse_combine {
+  color=Color(0.9725491, 0.9843138, 0.9882354);
+  texture=Prod3D_20295_textile_light_DIF_bitmap3_output;
+  texture_multiplier=1;
+}
+
+TexOutput Prod3D_20295_textile_light_BUM_bitmap4_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_textile_light_BUM_bitmap4;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_textile_light_BUM_bitmap4 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_textile_light_BUM_bitmap4_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_1_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_textile_light_BUM_bitmap4_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexOutput Prod3D_20295_textile_light_REF_bitmap5_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_textile_light_REF_bitmap5;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_textile_light_REF_bitmap5 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_textile_light_REF_bitmap5_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_textile_light_REF_bitmap5_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_20295_textile_light_VMT_material1_reflect_combine {
+  color=Color(0.01960784, 0.01960784, 0.01960784);
+  texture=Prod3D_20295_textile_light_REF_bitmap5_output;
+  texture_multiplier=0.05;
+}
+
+TexOutput Prod3D_20295_textile_light_REF_bitmap_mono1_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_textile_light_REF_bitmap_mono1_output_mono;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_textile_light_REF_bitmap_mono1 {
+  alpha_from_intensity=0;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_textile_light_REF_bitmap_mono1_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_textile_light_REF_bitmap_mono1_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1.25;
+  uvw_channel=1;
+}
+
+TexFloatToColor Prod3D_20295_textile_light_REF_bitmap_mono1_output_mono {
+  input=Prod3D_20295_textile_light_REF_bitmap_mono1::out_intensity;
+}
+
+TexCombineFloat Prod3D_20295_textile_light_VMT_material1_hilight_gloss_combine {
+  value=0.5;
+  texture=Prod3D_20295_textile_light_REF_bitmap_mono1_output;
+  texture_multiplier=0.05;
+  texture_clamp=1;
+}
+
+TexOutput Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_d_bitmap6_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_d_bitmap6;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_d_bitmap6 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_d_bitmap6_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_4_gsRGB;
+}
+
+UVWGenChannel Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_d_bitmap6_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=1;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_material2_diffuse_combine {
+  color=Color(0.5, 0.5, 0.5);
+  texture=Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_d_bitmap6_output;
+  texture_multiplier=1;
+}
+
+TexOutput Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_b_bitmap7_output {
+  alpha_from_intensity=0;
+  invert=0;
+  invert_alpha=0;
+  color_mult=AColor(1, 1, 1, 1);
+  color_offset=AColor(0, 0, 0, 0);
+  alpha_mult=1;
+  texmap=Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_b_bitmap7;
+  bump_amount=1;
+}
+
+TexBitmap Prod3D_20295_MDY4_WOOD_FLOOR19_Satin_b_bitmap7 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_20295_bitmapBuffer_5_gsRGB;
+}
+

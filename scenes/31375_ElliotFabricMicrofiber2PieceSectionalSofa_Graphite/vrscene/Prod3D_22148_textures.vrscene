@@ -1,0 +1,144 @@
+TexBitmap Prod3D_22148_wood_DIF@tex_0 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_22148_wood_DIF@tex_0_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_22148_bitmapBuffer_0_gsRGB;
+}
+
+UVWGenChannel Prod3D_22148_wood_DIF@tex_0_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(0, 1, 0), Vector(-1, -2.980232e-008, 0), Vector(0, 0, 1)), Vector(1, 2.980232238769531e-008, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=0.01;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_22148_Wood_VMT@mtl_brdf_0_diffuse_combine {
+  color=Color(0.5, 0.5, 0.5);
+  texture=Prod3D_22148_wood_DIF@tex_0;
+  texture_multiplier=1;
+}
+
+TexBitmap Prod3D_22148_Wood_REF@tex_1 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_22148_Wood_REF@tex_1_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_22148_bitmapBuffer_1_gsRGB;
+}
+
+UVWGenChannel Prod3D_22148_Wood_REF@tex_1_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(0, 1, 0), Vector(-1, -2.980232e-008, 0), Vector(0, 0, 1)), Vector(1, 2.980232238769531e-008, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=0.01;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_22148_Wood_VMT@mtl_brdf_0_reflect_combine {
+  color=Color(0.1568628, 0.1411765, 0.1411765);
+  texture=Prod3D_22148_Wood_REF@tex_1;
+  texture_multiplier=0.19;
+}
+
+TexBitmap Prod3D_22148_fabric_DIF@tex_2 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_22148_fabric_DIF@tex_2_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_22148_bitmapBuffer_2_gsRGB;
+}
+
+UVWGenChannel Prod3D_22148_fabric_DIF@tex_2_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(-2.384186e-007, 6, 0), Vector(-6, -2.384186e-007, 0), Vector(0, 0, 1)), Vector(3.5, -2.499999761581421, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=0.01;
+  uvw_channel=1;
+}
+
+TexCombineColor Prod3D_22148_Fabric_VMT@mtl_brdf_1_diffuse_combine {
+  color=Color(0.5215687, 0.4470589, 0.2901961);
+  texture=Prod3D_22148_fabric_DIF@tex_2;
+  texture_multiplier=1;
+}
+
+TexBitmap Prod3D_22148_fabric_BUM@tex_3 {
+  alpha_from_intensity=2;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_22148_fabric_BUM@tex_3_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_22148_bitmapBuffer_3_gsRGB;
+}
+
+UVWGenChannel Prod3D_22148_fabric_BUM@tex_3_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(1, 0, 0), Vector(0, 1, 0), Vector(0, 0, 1)), Vector(0, 0, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=0.01;
+  uvw_channel=1;
+}
+
+TexBitmap Prod3D_22148_fabric_SPC@tex_0 {
+  alpha_from_intensity=0;
+  nouvw_color=AColor(0, 0, 0, 0);
+  uvwgen=Prod3D_22148_fabric_SPC@tex_0_uvwgen;
+  placement_type=0;
+  u=0;
+  v=0;
+  w=1;
+  h=1;
+  bitmap=Prod3D_22148_bitmapBuffer_4_gsRGB;
+}
+
+UVWGenChannel Prod3D_22148_fabric_SPC@tex_0_uvwgen {
+  uvw_transform=Transform(Matrix(Vector(-2.384186e-007, 6, 0), Vector(-6, -2.384186e-007, 0), Vector(0, 0, 1)), Vector(3.5, -2.499999761581421, 0));
+  wrap_u=1;
+  wrap_v=1;
+  crop_u=0;
+  crop_v=0;
+  wrap_mode=1;
+  duvw_scale=0.01;
+  uvw_channel=1;
+}
+
+TexFloatToColor Prod3D_22148_fabric_SPC@tex_0_mono {
+  input=Prod3D_22148_fabric_SPC@tex_0::out_intensity;
+}
+
+TexCombineFloat Prod3D_22148_Fabric_VMT@mtl_brdf_1_refl_gloss_combine {
+  value=1;
+  texture=Prod3D_22148_fabric_SPC@tex_0_mono;
+  texture_multiplier=1;
+  texture_clamp=1;
+}
+

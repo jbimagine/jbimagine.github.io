@@ -1,0 +1,340 @@
+/////////////////////////////////////////
+// Exported by V-Ray Plugins Exporter
+// V-Ray core version is 3.25.01 built at Jun 10 22:09:08 2016
+// Exported at Mon Sep 25 13:36:12 2017
+/////////////////////////////////////////
+
+
+// Frame at time 0
+
+SettingsRTEngine Prod3D_22148_rtEngine_settings {
+  trace_depth=5;
+  gi_depth=3;
+  cpu_bundle_size=64;
+  cpu_samples_per_pixel=4;
+  gpu_bundle_size=64;
+  gpu_samples_per_pixel=4;
+  coherent_tracing=0;
+  stereo_mode=0;
+  stereo_eye_distance=6.5;
+  stereo_focus=2;
+  opencl_texsize=512;
+  opencl_resizeTextures=1;
+  opencl_textureFormat=2;
+  progressive_samples_per_pixel=1;
+  undersampling=0;
+  disable_render_elements=0;
+  max_render_time=0;
+  max_sample_level=10000;
+  noise_threshold=0.005;
+  enable_mask=0;
+  max_draw_interval=150;
+  min_draw_interval=50;
+  interactive=0;
+}
+
+RenderChannelColor Prod3D_22148_VRayReflection@RE_0 {
+  name="VRayReflection";
+  alias=102;
+  color_mapping=1;
+  filtering=1;
+}
+
+SettingsEnvironment Prod3D_22148_renderEnvironment {
+  bg_color=Color(0.6705883, 0.6705883, 0.6705883);
+  bg_tex=AColor(0.6705883, 0.6705883, 0.6705883, 1);
+  gi_color=Color(0.6705883, 0.6705883, 0.6705883);
+  gi_tex=AColor(0.6705883, 0.6705883, 0.6705883, 1);
+  reflect_color=Color(0.6705883, 0.6705883, 0.6705883);
+  reflect_tex=AColor(0.6705883, 0.6705883, 0.6705883, 1);
+  refract_color=Color(0.6705883, 0.6705883, 0.6705883);
+  refract_tex=AColor(0.6705883, 0.6705883, 0.6705883, 1);
+  secondary_matte_color=Color(0.6705883, 0.6705883, 0.6705883);
+  secondary_matte_tex=AColor(0.6705883, 0.6705883, 0.6705883, 1);
+  global_light_level=Color(1, 1, 1);
+}
+
+SettingsCameraDof Prod3D_22148_settingsCameraDOF {
+  on=0;
+  aperture=5;
+  center_bias=0;
+  focal_dist=200;
+  sides_on=0;
+  sides_num=5;
+  rotation=0;
+  anisotropy=0;
+  subdivs=1;
+}
+
+SettingsCamera Prod3D_22148_settingsCamera {
+  type=0;
+  height=90;
+  dist=2;
+  fov=0.7853982;
+  auto_fit=0;
+  curve=1;
+}
+
+SettingsUnitsInfo Prod3D_22148_settingsUnits {
+  meters_scale=0.001;
+  photometric_scale=0.002094395;
+  seconds_scale=0.03333334;
+  rgb_color_space=1;
+}
+
+SettingsColorMapping Prod3D_22148_colorMapping {
+  type=6;
+  dark_mult=1;
+  bright_mult=1;
+  gamma=2.2;
+  subpixel_mapping=0;
+  clamp_output=0;
+  clamp_level=1;
+  adaptation_only=2;
+  linearWorkflow=0;
+  exposure=Color(1.381553, 1.381553, 1.381553);
+}
+
+SettingsGI Prod3D_22148_gi_settings {
+  on=1;
+  refract_caustics=1;
+  reflect_caustics=1;
+  saturation=1;
+  contrast=1;
+  contrast_base=0.5;
+  primary_engine=2;
+  primary_multiplier=1;
+  secondary_engine=3;
+  secondary_multiplier=1;
+  ray_distance_on=0;
+  ray_distance=100;
+  ao_on=0;
+  ao_amount=0.8;
+  ao_radius=10;
+  ao_subdivs=8;
+}
+
+SettingsOutput Prod3D_22148_output_settings {
+  img_width=1274;
+  img_height=1000;
+  frames_per_second=1;
+}
+
+SettingsOptions Prod3D_22148_settingsOptions {
+  geom_displacement=1;
+  light_doLights=1;
+  light_doDefaultLights=2;
+  light_doHiddenLights=1;
+  light_doShadows=1;
+  light_onlyGI=0;
+  gi_dontRenderImage=0;
+  mtl_reflectionRefraction=1;
+  mtl_limitDepth=0;
+  mtl_maxDepth=5;
+  mtl_doMaps=1;
+  mtl_filterMaps=1;
+  mtl_filterMapsForSecondaryRays=1;
+  mtl_transpMaxLevels=50;
+  mtl_transpCutoff=0.001;
+  mtl_override_on=0;
+  mtl_glossy=1;
+  geom_backfaceCull=0;
+  ray_bias=0;
+  gi_texFilteringMultiplier=5;
+  misc_transferAssets=1;
+  misc_useCachedAssets=1;
+  dr_assetsCacheLimitType=2;
+  dr_assetsCacheLimitValue=100;
+  dr_overwriteLocalCacheSettings=1;
+  ray_max_intensity_on=1;
+  ray_max_intensity=20;
+  probabilistic_lights_on=1;
+  num_probabilistic_lights=16;
+}
+
+SettingsCaustics Prod3D_22148_settingsCaustics {
+  on=0;
+  max_photons=60;
+  search_distance=5;
+  max_density=0;
+  multiplier=1;
+  mode=0;
+  file="";
+  dont_delete=1;
+  auto_save=0;
+  auto_save_file="";
+  show_calc_phase=0;
+}
+
+SettingsImageSampler Prod3D_22148_settingsIS {
+  type=3;
+  min_shade_rate=6;
+  fixed_subdivs=1;
+  dmc_minSubdivs=1;
+  dmc_maxSubdivs=24;
+  dmc_threshold=0.01;
+  dmc_adaptive_method=1;
+  subdivision_minRate=-1;
+  subdivision_maxRate=2;
+  subdivision_jitter=1;
+  subdivision_threshold=0.1;
+  subdivision_edges=0;
+  subdivision_normals=0;
+  subdivision_normals_threshold=0.05;
+  progressive_minSubdivs=1;
+  progressive_maxSubdivs=100;
+  progressive_threshold=0.005;
+  progressive_maxTime=1;
+  progressive_bundleSize=128;
+  progressive_showMask=0;
+  progressive_progNoiseThreshold=30;
+  render_mask_mode=0;
+}
+
+FilterLanczos Prod3D_22148_aaFilter {
+  size=2;
+}
+
+SettingsLightCache Prod3D_22148_settingsLightCache {
+  subdivs=1000;
+  sample_size=0.01;
+  filter_type=1;
+  filter_samples=5;
+  filter_size=0.02;
+  prefilter=1;
+  prefilter_samples=20;
+  depth=100;
+  show_calc_phase=1;
+  store_direct_light=1;
+  world_scale=0;
+  mode=0;
+  file="";
+  dont_delete=1;
+  auto_save=0;
+  auto_save_file="";
+  num_passes=64;
+  use_for_glossy_rays=1;
+  adaptive_sampling=0;
+  premultiplied=1;
+  multiple_views=0;
+  retrace_enabled=1;
+  retrace_threshold=2;
+  retrace_leak_prevention=0.8;
+}
+
+SettingsIrradianceMap Prod3D_22148_settingsIMAP {
+  min_rate=-3;
+  max_rate=0;
+  subdivs=50;
+  interp_samples=20;
+  calc_interp_samples=10;
+  interp_frames=2;
+  color_threshold=0.3;
+  normal_threshold=0.1;
+  distance_threshold=0.1;
+  detail_enhancement=0;
+  detail_radius=60;
+  detail_subdivs_mult=0.3;
+  detail_scale=0;
+  randomize_samples=1;
+  interpolation_mode=1;
+  lookup_mode=3;
+  mode=0;
+  dont_delete=1;
+  file="";
+  show_samples=0;
+  show_calc_phase=1;
+  show_direct_light=0;
+  multiple_views=0;
+  multipass=1;
+  check_sample_visibility=0;
+  auto_save=0;
+  auto_save_file="";
+}
+
+SettingsDMCGI Prod3D_22148_settingsDMCGI {
+  subdivs=8;
+  depth=3;
+}
+
+SettingsPhotonMap Prod3D_22148_settingsPhotonMap {
+  bounces=10;
+  max_photons=30;
+  prefilter=0;
+  prefilter_samples=10;
+  mode=0;
+  file="";
+  auto_search_distance=1;
+  search_distance=20;
+  convex_hull_estimate=0;
+  dont_delete=1;
+  auto_save=0;
+  auto_save_file="";
+  store_direct_light=1;
+  multiplier=1;
+  max_density=0;
+  retrace_corners=0;
+  retrace_bounces=10;
+  show_calc_phase=0;
+}
+
+SettingsDMCSampler Prod3D_22148_settingsDMCSampler {
+  time_dependent=1;
+  adaptive_amount=0.85;
+  adaptive_threshold=0.005;
+  adaptive_min_samples=16;
+  subdivs_mult=1;
+  path_sampler_type=2;
+  div_shade_subdivs=1;
+  random_seed=0;
+  use_local_subdivs=0;
+}
+
+SettingsMotionBlur Prod3D_22148_settingsMotionBlur {
+  on=0;
+  geom_samples=2;
+  low_samples=1;
+  duration=0.5;
+  subdivs=1;
+  bias=0;
+  interval_center=0.5;
+}
+
+SettingsDefaultDisplacement Prod3D_22148_settingsDefaultDisplacement {
+  override_on=1;
+  edgeLength=4;
+  viewDependent=1;
+  maxSubdivs=256;
+  tightBounds=1;
+  amount=1;
+  relative=1;
+}
+
+SettingsRaycaster Prod3D_22148_settingsRaycaster {
+  maxLevels=80;
+  minLeafSize=0;
+  faceLevelCoef=1;
+  dynMemLimit=4000;
+  optLevel=0;
+  embreeUse=1;
+  embreeUseMB=1;
+  embreeHair=1;
+  embreeLowMemory=0;
+}
+
+SettingsRegionsGenerator Prod3D_22148_settingsRegionsGenerator {
+  xc=48;
+  yc=48;
+  xymeans=0;
+  seqtype=4;
+  reverse=0;
+}
+
+#include "C:\xampp\htdocs\Babylon1\scenes\31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite\vrscene\Prod3D_22148_view.vrscene"
+#include "C:\xampp\htdocs\Babylon1\scenes\31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite\vrscene\Prod3D_22148_lights.vrscene"
+#include "C:\xampp\htdocs\Babylon1\scenes\31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite\vrscene\Prod3D_22148_geometry.vrscene"
+#include "C:\xampp\htdocs\Babylon1\scenes\31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite\vrscene\Prod3D_22148_nodes.vrscene"
+#include "C:\xampp\htdocs\Babylon1\scenes\31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite\vrscene\Prod3D_22148_materials.vrscene"
+#include "C:\xampp\htdocs\Babylon1\scenes\31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite\vrscene\Prod3D_22148_textures.vrscene"
+#include "C:\xampp\htdocs\Babylon1\scenes\31375_ElliotFabricMicrofiber2PieceSectionalSofa_Graphite\vrscene\Prod3D_22148_bitmaps.vrscene"
+
