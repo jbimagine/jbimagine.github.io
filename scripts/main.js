@@ -113,13 +113,14 @@ createScene = function() {
 			let h1 = new BABYLON.HighlightLayer('hl', scene);
 			//SET THE INITIAL STATE OF THE lastClickedMesh var
 			let lastClickedMesh = null;
+			let mesh = null;
 
 			//ADD A POINTERDOWN OBSERVABLE 
 			scene.onPointerObservable.add(evt => {
 				
 				if (evt.pickInfo.hit && evt.pickInfo.pickedMesh !== undefined) {
 					//STORES THE MESH INTO A VARIABLE
-					let mesh = evt.pickInfo.pickedMesh;
+					 mesh = evt.pickInfo.pickedMesh;
 					let fabrics = document.querySelectorAll('.fabrics');
 					let currentFabric;
 					fabrics.forEach(function(fabric) {
@@ -129,6 +130,8 @@ createScene = function() {
 							if(mesh && currentFabric){
 								mesh.material = currentFabric;
 								//console.log(evt.pickInfo.pickedMeshmesh);
+							}else {
+								mesh.removeMesh(mesh);
 							}
 						});
 					});
